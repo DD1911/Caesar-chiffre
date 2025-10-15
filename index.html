@@ -5,6 +5,36 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Cäsar-Chiffre – Visual Encrypt & Decrypt</title>
     <style>
+        .intro-box {
+    background: linear-gradient(135deg, #e6f4ea, #ffffff);
+    border: 1px solid #cde5d3;
+    border-radius: 12px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    text-align: center;
+}
+
+.intro-box h1 {
+    color: #2e8b57;
+    margin-bottom: 10px;
+}
+
+.intro-box p {
+    color: #333;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.intro-box .funfact {
+    margin-top: 15px;
+    font-style: italic;
+    background: #f9fdf9;
+    border-left: 4px solid #2e8b57;
+    padding: 8px 12px;
+}
+
         :root {
             --size: 420px;
             --outer-radius: 190px;
@@ -116,6 +146,23 @@
     </style>
 </head>
 <body>
+    
+<div class="intro-box">
+  <h1>🔑 Cäsar-Chiffre</h1>
+  <p>
+    Du willst geheime Botschaften mit einem Freund austauschen? Mach’s wie die Römer:
+    Verschiebe einfach die Buchstaben deiner Nachricht – so wird aus A ein D, aus B ein E, 
+    und schon versteht nur, wer den <strong>Schlüssel</strong> kennt, was du sagen willst.
+  </p>
+  <p>
+    Gib deinem Empfänger denselben Schlüssel, und ihr könnt Nachrichten hin- und herschicken,
+    die sonst niemand lesen kann. 
+  </p>
+  <p class="funfact">
+    🧠 <em>Fun Fact:</em> Diese simple Idee war der Urahn moderner <strong>Ende-zu-Ende-Verschlüsselung</strong> – 
+    der erste Schritt zu dem, was heute WhatsApp, Signal & Co. sicher macht.
+  </p>
+</div>
 
 <!-- ENCRYPTION PANEL -->
 <div class="panel" id="encryptPanel">
@@ -261,4 +308,5 @@
 
 </body>
 </html>
+
 
